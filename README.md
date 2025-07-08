@@ -13,7 +13,7 @@ IoT 임베디드 시스템 리포지토리
  
 - Raspberrypi SSH 활성화
   - Putty Host Name : raspberrypi.local -> SSH -> Open
-  - &sudo raspi-config
+  - sudo raspi-config
   - Interface Options -> SSH -> Yes
 
 - VNC Viewer 다운로드
@@ -24,3 +24,10 @@ IoT 임베디드 시스템 리포지토리
  
 - Raspberry Pi 시작하기
   - sudo apt update & sudo apt upgrade -y
+  - sudo reboot now
+  - sudo raspi-config
+  - Interface Options -> VNC -> Yes
+  - 한글 설정
+      - 나눔 폰트 설치 : sudo apt install fonts-nanum fonts-nanum-extra
+      - 폰트 등록 : sudo apt install fonts-unfonts-core
+      - 터미널 한글 설정 : Raspberry Pi Configuration - Local - ko, UTF-8 설정
