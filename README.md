@@ -8,7 +8,7 @@ IoT 임베디드 시스템 리포지토리
   - 디바이스 : RASPBERRY PI 5
   - 운영체제 : RASPBERRY PI OS (64bit)
   - 저장소 : SD카드
-  - OS 커스터마이징 : 일반 - 무선랜 설정, 서비스 - SSH사용
+  - OS 커스터마이징 : 일반 - 무선랜 설정, 서비스 - SSH 사용
   - 설치 후 라즈베리파이에 장착
  
 - Raspberrypi SSH 활성화
@@ -28,6 +28,26 @@ IoT 임베디드 시스템 리포지토리
   - sudo raspi-config
   - Interface Options -> VNC -> Yes
   - 한글 설정
-      - 나눔 폰트 설치 : sudo apt install fonts-nanum fonts-nanum-extra
-      - 폰트 등록 : sudo apt install fonts-unfonts-core
-      - 터미널 한글 설정 : Raspberry Pi Configuration - Local - ko, UTF-8 설정
+    1. 나눔 폰트 설치 : sudo apt install fonts-nanum fonts-nanum-extra
+    2. 폰트 등록 : sudo apt install fonts-unfonts-core
+    3. 터미널 한글 설정 : Raspberry Pi Configuration - Local - ko, UTF-8 설정
+    <!-- - 한글 입력, 추후 수정!!
+      - sudo apt install ibus
+      - sudo apt install ibus-hangul -->
+
+- nanorc 수정
+- sudo nano /etc/nanorc 주석 해제
+  - set autoindent
+  - set linenumbers
+  - set tabsize 4
+
+<!-- - 파일 기본 명령어
+- ls -al : 숨은 파일 확인
+- ls -l
+- 특정파일 ls -al [파일이름]
+- ls *.txt
+- ls ?.txt
+. :
+.. :
+~ :
+ㅣㄴ -->
