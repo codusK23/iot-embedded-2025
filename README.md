@@ -123,7 +123,7 @@ IoT 임베디드 시스템 리포지토리
 #### 스위치
 - 버튼 스위치 모듈 KY-004 사용
 
-  <img src="./Image/em0004.jpg" width="300">
+  <img src="./Image/em0005.jpg" width="300">
 
   - (-) : GND
   - ( ) : Vcc
