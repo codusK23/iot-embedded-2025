@@ -120,6 +120,8 @@ IoT 임베디드 시스템 리포지토리
 
 - [코드 실습 영상](./Day01/led.py)
 
+  https://github.com/user-attachments/assets/609d2532-0b06-44c2-a1b4-ace349429a01
+  
 #### 스위치
 - 버튼 스위치 모듈 KY-004 사용
 
@@ -131,6 +133,7 @@ IoT 임베디드 시스템 리포지토리
 
 - [코드 실습 영상](./Day01/button.py)
 
+  https://github.com/user-attachments/assets/fb5ac6c6-d7db-4689-a701-fcadba99ae39
 
 - 풀 업 / 풀 다운 저항
   - 스위치를 누르면 GND에 닿아 입력핀이 기본값을 읽어옴
