@@ -118,7 +118,7 @@ IoT 임베디드 시스템 리포지토리
 
 - LED의 (V)가 Vcc에 연결되어 있고 GPIO를 통해 GND처럼 동작하기 때문에 LOW할 때 LED 켜짐
 
-<!-- - 실습 영상 -->
+- [코드 실습 영상](./Day01/led.py)
 
 #### 스위치
 - 버튼 스위치 모듈 KY-004 사용
@@ -127,11 +127,73 @@ IoT 임베디드 시스템 리포지토리
 
   - (-) : GND
   - ( ) : Vcc
-  - (S) : 신호 선
+  - (S) : Signal
 
-<!-- - 실습 영상 -->
+- [코드 실습 영상](./Day01/button.py)
+
 
 - 풀 업 / 풀 다운 저항
   - 스위치를 누르면 GND에 닿아 입력핀이 기본값을 읽어옴
   - 풀 업 : 기본 값 1(HIGH), 스위치를 누르면 0(LOW)
   - 풀 다운 : 기본 값 0(LOW), 스위치를 누르면 1(HIGH)
+
+
+ ## 3일차
+ ### 센서
+ #### 온습도
+- 온습도 센서 모듈 DHT11 사용
+
+  <img src="./Image/em0007.jpg" width="300">
+
+- pip install adafruit-circuitpython-dht
+- sudo apt install libgpiod2
+
+- (-) : GND
+- ( ) : Vcc - 3.3V
+- (S) : Signal
+
+#### DB에 온습도 데이터 넣기
+- DB 설치
+  - sudo apt install mariadb-server
+
+- DB 접속
+  - sudo mysql
+  - show databases;
+
+- root 사용자 비밀번호 설정
+  - ALTER USER 'root'@'localhost' IDENTIFIED BY '비밀번호';
+
+- DB / TABLE 생성
+  - CREATE DATABASE 데이터베이스이름;
+  - CREATE TABLE 테이블이름 (데이터 설명);
+
+- 데이터 삽입
+  - pip install mysql-connector-python
+  ```python
+  import mysql.connector
+
+  
+  db = mysql.connector.connect(
+       host = "localhost",
+       user = "root",
+       password = "",           # 보안상 생략
+       database = "TESTDB"
+  )
+
+  cursor = db.cursor()
+
+  ...
+
+  while True:
+      try:
+          cursor.execute("INSERT INTO dht11_data (temp, humi) VALUES (%s, %s)", (temp, humi))
+          
+          db.commit()
+
+  ...
+
+  ```
+
+  - TESTDB.dht11_data
+
+    <img src="./Image/em0008.jpg" width="400">
