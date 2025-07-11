@@ -118,7 +118,7 @@ IoT 임베디드 시스템 리포지토리
 
 - LED의 (V)가 Vcc에 연결되어 있고 GPIO를 통해 GND처럼 동작하기 때문에 LOW할 때 LED 켜짐
 
-- [코드 실습 영상](./Day01/led.py)
+- [코드 실습 영상](./Chapter01/led.py)
 
   https://github.com/user-attachments/assets/609d2532-0b06-44c2-a1b4-ace349429a01
   
@@ -131,7 +131,7 @@ IoT 임베디드 시스템 리포지토리
   - ( ) : Vcc
   - (S) : Signal
 
-- [코드 실습 영상](./Day01/button.py)
+- [코드 실습 영상](./Chapter01/button.py)
 
   https://github.com/user-attachments/assets/fb5ac6c6-d7db-4689-a701-fcadba99ae39
 
@@ -200,3 +200,33 @@ IoT 임베디드 시스템 리포지토리
   - TESTDB.dht11_data
 
     <img src="./Image/em0008.jpg" width="400">
+
+
+## 4일차
+### PyQt
+#### PyQt 설치
+  - sudo apt install python3-pyqt5
+  - sudo apt install qttools5-dev-tools
+
+#### PyQt 기본 구조
+```python
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget
+
+app = QApplivation(sys.argv)      # 객체 생성
+window = Qwidget()                # 기본 윈도우 생성
+window.show()                     # 윈도우 보이기
+app.exec_()                       # 이벤트 루프 실행
+```
+
+#### PyQt UI 파일 로드
+```python
+uic.loadUi("hello.ui", self)
+uic.loadUiType("hello.ui")[0]
+```
+
+#### PyQt 실행 환경
+- putty에서는 실행 불가. 텍스트 기반 터미널이라 GUI가 나타나지 않음
+- VNC Viewer에서 실행해야 GUI 확인 가능
+
+
