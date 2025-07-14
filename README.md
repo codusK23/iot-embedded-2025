@@ -263,7 +263,12 @@ uic.loadUiType("hello.ui")[0]
 - (S) : Signal
 
 - [코드 실습 영상](./Chapter04/buzzer3.py) : 경찰차 사이렌 구현
-
-
-
+  
+  https://github.com/user-attachments/assets/8524b065-10fc-4fd4-92b2-83a60875a34e
+ 
 - [코드 실습 영상](./Chapter04/buzzer4.py) : 키보드 피아노 구현
+  
+  https://github.com/user-attachments/assets/f7673596-133f-48f6-96de-4cf3c3c1310e
+
+
+## 6일차
