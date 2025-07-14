@@ -230,3 +230,40 @@ uic.loadUiType("hello.ui")[0]
 - VNC Viewer에서 실행해야 GUI 확인 가능
 
 
+## 5일차
+### 주파수 (Frequency)
+- 단위 : Hz
+- 1초 동안 반복되는 연산횟수.
+- 주파수가 높을수록 단위 시간당 더 많은 연산을 수행함.
+
+### PWM 제어
+- 디지털 신호의 ON/OFF 시간을 조절해 평균 전압을 제어하는 방식
+  - 디지털 신호지만 아날로그처럼 동작
+- Duty Cycle : 전체 주기 중 ON 상태의 비율
+  - 0% : 항상 OFF (LOW)
+  - 50% : ON 50%, OFF 50%
+  - 100% : 항상 ON (HIGH)
+
+### 센서
+#### 부저
+- 수동 부저모듈 KY-006
+
+  <img src="./Image/em0009.jpg" width="300">
+
+- 수동 부저 (Passive Buzzer)
+  - PWM을 이용해 주파수를 넣어줘야 소리가 남
+  - 원하는 음 높이 조절 가능
+
+- 능동 부저 (Active Buzzer)
+  - 전원 공급 시 자동으로 정해진 소리를 냄
+  - ON/OFF 제어만 하면 됨. (GPIO.HIGH / GPIO.LOW)
+
+- (-) : GND
+- ( ) : Vcc
+- (S) : Signal
+
+- [코드 실습 영상](./Chapter04/buzzer3.py) : 경찰차 사이렌 구현
+
+
+
+- [코드 실습 영상](./Chapter04/buzzer4.py) : 키보드 피아노 구현
