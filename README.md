@@ -297,7 +297,7 @@ uic.loadUiType("hello.ui")[0]
 
 - [코드 실습 영상](./Chapter05/interrupt_led.py)
 
-
+  https://github.com/user-attachments/assets/5c0c5208-333f-4362-9822-04748d1f86b6
 
 
 ## 7일차
