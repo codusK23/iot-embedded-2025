@@ -272,3 +272,20 @@ uic.loadUiType("hello.ui")[0]
 
 
 ## 6일차
+### 센서
+#### 릴레이 모듈
+- 1채널 5V 릴레이 모듈 사용
+
+  <img src="./Image/em0012.jpg" width="300">
+
+- 릴레이 : 전자 스위치. 전기 신호로 작동
+- 릴레이 출력 부
+  - NO (Normally Open) : 평소에 열려있음. 신호를 주면 닫힘 -> 전류가 흐름
+  - NC (Normally Closed) : 평소에 닫혀 있음. 신호를 주면 열림 -> 전류 차단
+  - 공통 단자 : 제어하고 싶은 외부 전원 연결
+
+- (S) : Signal
+- (+) : Vcc
+- (-) : GND
+
+- [코드 실습 영상](./Chapter05/relayTest.py)
