@@ -289,3 +289,8 @@ uic.loadUiType("hello.ui")[0]
 - (-) : GND
 
 - [코드 실습 영상](./Chapter05/relayTest.py)
+
+https://github.com/user-attachments/assets/6cf78499-af90-47e3-abd1-c004ce2e37f1
+
+
+## 7일차
