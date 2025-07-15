@@ -278,19 +278,26 @@ uic.loadUiType("hello.ui")[0]
 
   <img src="./Image/em0012.jpg" width="300">
 
-- 릴레이 : 전자 스위치. 전기 신호로 작동
+- 릴레이 : 전자 스위치. 전기 신호로 전류 흐름 제어
 - 릴레이 출력 부
-  - NO (Normally Open) : 평소에 열려있음. 신호를 주면 닫힘 -> 전류가 흐름
-  - NC (Normally Closed) : 평소에 닫혀 있음. 신호를 주면 열림 -> 전류 차단
-  - 공통 단자 : 제어하고 싶은 외부 전원 연결
+  - NO (Normally Open) : 평소에 열려있음. 신호를 주면 닫히면서 전류가 흐름
+  - NC (Normally Closed) : 평소에 닫혀 있음. 신호를 주면 열리면서 전류 차단
+  - 공통 단자 : 제어하고 싶은 외부 회로 전원 연결
 
 - (S) : Signal
 - (+) : Vcc
 - (-) : GND
 
-- [코드 실습 영상](./Chapter05/relayTest.py)
+- 인터럽트 : 갑작스러운 이벤트에 자동 반응하는 처리 방식
+  - 상태변화가 생기면 메인 루프가 무슨 작동을 하고 있든 등록한 함수 즉시 실행
+  ```python
+  GPIO.add_event_detect(btnpin, GPIO.BOTH, callback=func)
+  ```
+  : 버튼이 눌리는 순간 func 함수 자동 호출
 
-  https://github.com/user-attachments/assets/6cf78499-af90-47e3-abd1-c004ce2e37f1
+- [코드 실습 영상](./Chapter05/interrupt_led.py)
+
+
 
 
 ## 7일차
