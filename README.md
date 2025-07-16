@@ -301,3 +301,24 @@ uic.loadUiType("hello.ui")[0]
 
 
 ## 7일차
+### Flask
+: 간단하고 빠르게 웹서버 구축
+- 작동 흐름
+  1. 사용자 : 브라우저에서 주소 접속
+  2. Flask 서버 : 해당 URL에 맞는 함수 실행 
+  3. 결과 반환 : 웹 페이지에 출력
+
+- 필요 라이브러리 : from flask import Flask
+- 기본구조
+  ```python
+  from flask import Flask
+  app = Flask(__name__)
+
+  @app.route('/')
+  def home():
+      return "LED Control Web"
+
+  if __name__ == '__main__':
+      app.run(host="0.0.0.0")
+  ```
+- host="0.0.0.0" : 모든 외부 IP Flask 서버 접근 가능
