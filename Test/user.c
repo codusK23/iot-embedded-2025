@@ -52,6 +52,6 @@ void login()
 	if (strcmp(inputId, userId) == 0 && strcmp(inputPw, userPw) == 0){
 		printf("로그인 완료\n");
 	}else {
-		printf("로그인 실패 : 아이디 또는 비밀번호가 일치하지 않습니다.");
+		printf("로그인 실패 : 아이디 또는 비밀번호가 일치하지 않습니다.\n");
 	}
 }
