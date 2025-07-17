@@ -322,3 +322,6 @@ uic.loadUiType("hello.ui")[0]
       app.run(host="0.0.0.0")
   ```
 - host="0.0.0.0" : 모든 외부 IP Flask 서버 접근 가능
+
+## 8일차
+###
