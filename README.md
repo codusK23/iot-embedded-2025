@@ -335,3 +335,6 @@ uic.loadUiType("hello.ui")[0]
 
 #### 웹을 통한 GPIO제어
 - [코드실습영상](./Web/Chapter02/ledapp.py) : 웹 주소에 따라 LED 제어 상태 변환
+
+  https://github.com/user-attachments/assets/73d62755-b120-443f-b5ec-36259a8b24d6
+
